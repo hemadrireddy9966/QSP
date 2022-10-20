@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="Test2(failed)">
+    <parameter name="browserName" value="edge"/>
+    <classes>
+      <class name="com.paralleAndCrossBrowser.ParelleAndCrossBrowser2">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="tests"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.paralleAndCrossBrowser.ParelleAndCrossBrowser2 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="4" parallel="tests" name="Test3(failed)">
+    <parameter name="browserName" value="opera"/>
+    <classes>
+      <class name="com.paralleAndCrossBrowser.ParelleAndCrossBrowser3">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="tests"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.paralleAndCrossBrowser.ParelleAndCrossBrowser3 -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="4" parallel="tests" name="Test4(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.paralleAndCrossBrowser.ParelleAndCrossBrowser4">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="tests"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.paralleAndCrossBrowser.ParelleAndCrossBrowser4 -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test thread-count="4" parallel="tests" name="Test1(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.paralleAndCrossBrowser.ParelleAndCrossBrowser1">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeMethod"/>
+          <include name="AfterMethod"/>
+          <include name="tests"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- com.paralleAndCrossBrowser.ParelleAndCrossBrowser1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
